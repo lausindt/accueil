@@ -9,29 +9,27 @@
   font-weight: normal;
   font-style: normal; }
 
-/* line 45, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 56, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 body {
   font-family: fedraserifB;
   margin: 0;
   padding: 0; }
 
-/* line 50, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 61, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .haut {
   background-image: url(./image/selva1.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
-/* line 56, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
-.page {
-  margin: auto;
-  padding: 0 4%;
-  width: 88%;
+/* line 67, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+.ls {
   display: block;
+  padding: 0 10%;
   background-color: #02001e;
   font-size: 2em; }
 
-/* line 61, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 73, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .menu {
   margin: auto;
   padding: 0 4%;
@@ -40,7 +38,7 @@ body {
   height: 70px;
   color: #dcc846; }
 
-/* line 66, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 78, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa1 {
   margin: auto;
   padding: 0 4%;
@@ -50,27 +48,56 @@ body {
   background-color: rgba(2, 0, 30, 0.2);
   color: #dcc846; }
 
-/* line 72, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 84, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa2 {
-  height: 200px;
-  background-color: #02001e; }
+  background-color: white;
+  padding-top: 20px; }
 
-/* line 76, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 88, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa2-1 {
   margin: auto;
   padding: 0 4%;
   width: 88%;
   display: block;
-  height: 200px;
-  background-color: #02001e;
-  color: #dcc846; }
+  color: #02001e;
+  text-align: center; }
 
-/* line 82, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 93, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+.pa2-ujf {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 88%;
+  width: 24%;
+  height: 100px;
+  background-image: url(./image/ujf.png); }
+
+/* line 97, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+.pa2-udem {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 88%;
+  width: 24%;
+  height: 100px;
+  background-image: url(./image/udem.png); }
+
+/* line 101, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+.pa2-unistra {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 88%;
+  width: 24%;
+  height: 100px;
+  background-image: url(./image/unistra.png); }
+
+/* line 105, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa3 {
   background-color: #cedfea;
   height: 100px; }
 
-/* line 86, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 109, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa3-1 {
   margin: auto;
   padding: 0 4%;
@@ -79,28 +106,30 @@ body {
   background-color: rgba(2, 0, 30, 0.2);
   color: #dcc846; }
 
-/* line 91, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 114, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa4 {
   background-image: url(./image/selva2.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 700px; }
 
-/* line 97, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 120, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa4-1 {
   background: linear-gradient(to bottom, #cedfea, rgba(159, 202, 224, 0));
-  color: #dcc846; }
+  padding: 0 10%; }
 
-/* line 101, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 124, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 h1, h2, h3, h4 {
   display: inline-block;
   color: white;
   /* Fallback: assume this color ON TOP of image */
   background: url(./image/selva1.jpeg) no-repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+  margin: 10px 0 0 0; }
 
-/* line 105, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 130, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 a {
   color: inherit;
   text-decoration: none;

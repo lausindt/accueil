@@ -19,6 +19,9 @@ $green1 : rgb(220,200,70) ;
 $transparent : rgba(0,0,0, 0) ;
 $selva1 : url(./image/selva1.jpeg);
 $selva2 : url(./image/selva2.jpeg);
+$ujf : url(./image/ujf.png);
+$udem : url(./image/udem.png);
+$unistra : url(./image/unistra.png);
 $w-1 : 8%;
 $w-2 : 16%; 
 $w-3 : 24%;
@@ -42,6 +45,14 @@ $w-12 : 100%;
    background: url(./image/selva1.jpeg) no-repeat;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;}
+@mixin logo-position{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: $w-11;
+    width: $w-3;
+    height: 100px;
+}
 body {
     font-family: fedraserifB;
     margin:0;
@@ -50,11 +61,12 @@ body {
 .haut{
     background-image: $selva1;
     background-size: cover;
-    background-position: center;
+    background-position: center ;
     background-repeat: no-repeat;
 }
-.page { 
-    @include colonne;
+.ls { 
+    display:block;
+    padding: 0 10%;
     background-color: $blue1;
     font-size: 2em;
 }
@@ -70,14 +82,25 @@ body {
     color: $green1;
 }
 .pa2 {
-    height: 200px;
-    background-color: $blue1;
+    background-color: white;
+    padding-top: 20px;
 }
 .pa2-1 { 
     @include colonne;
-    height: 200px;
-    background-color: $blue1;
-    color: $green1;
+    color: $blue1;
+    text-align: center;
+}
+.pa2-ujf { 
+    @include logo-position;
+    background-image: $ujf;
+}
+.pa2-udem { 
+    @include logo-position;
+    background-image: $udem;
+}
+.pa2-unistra { 
+    @include logo-position;
+    background-image: $unistra;
 }
 .pa3 {
     background-color: $blue3;
@@ -96,11 +119,13 @@ body {
 }
 .pa4-1 {
     background: linear-gradient(to bottom, $blue3, $blue4);
-    color: $green1;
+    padding:  0 10%;
 }
 h1, h2, h3, h4 {
     display:inline-block;
     @include text-transparent;
+    padding:0;
+    margin:10px 0 0 0;
 }
 a {
     color: inherit;
