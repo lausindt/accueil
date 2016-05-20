@@ -69,6 +69,7 @@ body {
     padding: 0 10%;
     background-color: $blue1;
     font-size: 2em;
+    border-bottom: solid white 2px;
 }
 .menu { 
     @include colonne;

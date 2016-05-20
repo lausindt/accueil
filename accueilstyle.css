@@ -27,9 +27,10 @@ body {
   display: block;
   padding: 0 10%;
   background-color: #02001e;
-  font-size: 2em; }
+  font-size: 2em;
+  border-bottom: solid white 2px; }
 
-/* line 73, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 74, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .menu {
   margin: auto;
   padding: 0 4%;
@@ -38,7 +39,7 @@ body {
   height: 70px;
   color: #dcc846; }
 
-/* line 78, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 79, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa1 {
   margin: auto;
   padding: 0 4%;
@@ -48,12 +49,12 @@ body {
   background-color: rgba(2, 0, 30, 0.2);
   color: #dcc846; }
 
-/* line 84, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 85, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa2 {
   background-color: white;
   padding-top: 20px; }
 
-/* line 88, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 89, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa2-1 {
   margin: auto;
   padding: 0 4%;
@@ -62,7 +63,7 @@ body {
   color: #02001e;
   text-align: center; }
 
-/* line 93, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 94, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa2-ujf {
   display: inline-block;
   background-repeat: no-repeat;
@@ -72,7 +73,7 @@ body {
   height: 100px;
   background-image: url(./image/ujf.png); }
 
-/* line 97, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 98, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa2-udem {
   display: inline-block;
   background-repeat: no-repeat;
@@ -82,7 +83,7 @@ body {
   height: 100px;
   background-image: url(./image/udem.png); }
 
-/* line 101, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 102, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa2-unistra {
   display: inline-block;
   background-repeat: no-repeat;
@@ -92,12 +93,12 @@ body {
   height: 100px;
   background-image: url(./image/unistra.png); }
 
-/* line 105, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 106, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa3 {
   background-color: #cedfea;
   height: 100px; }
 
-/* line 109, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 110, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa3-1 {
   margin: auto;
   padding: 0 4%;
@@ -106,19 +107,19 @@ body {
   background-color: rgba(2, 0, 30, 0.2);
   color: #dcc846; }
 
-/* line 114, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 115, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa4 {
   background-image: url(./image/selva2.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 700px; }
 
-/* line 120, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 121, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 .pa4-1 {
   background: linear-gradient(to bottom, #cedfea, rgba(159, 202, 224, 0));
   padding: 0 10%; }
 
-/* line 124, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 125, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 h1, h2, h3, h4 {
   display: inline-block;
   color: white;
@@ -129,7 +130,7 @@ h1, h2, h3, h4 {
   padding: 0;
   margin: 10px 0 0 0; }
 
-/* line 130, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
+/* line 131, /Users/Spoke/GitHub/accueil/accueilstyle.scss */
 a {
   color: inherit;
   text-decoration: none;
