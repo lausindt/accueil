@@ -17,111 +17,18 @@ $blue3 : rgb(206,223,234) ;
 $blue4 : rgba(159,202,224, 0) ;
 $green1 : rgb(220,200,70) ;
 $transparent : rgba(0,0,0, 0) ;
+
 $selva1 : url(./image/selva1.jpeg);
 $selva2 : url(./image/selva2.jpeg);
+
 $ujf : url(./image/ujf.png);
 $udem : url(./image/udem.png);
 $unistra : url(./image/unistra.png);
-$w-1 : 8%;
-$w-2 : 16%; 
-$w-3 : 24%;
-$w-4 : 32%; 
-$w-5 : 40%; 
-$w-6 : 48%; 
-$w-7 : 56%;
-$w-8 : 64%;
-$w-9 : 72%; 
-$w-10 : 80%;
-$w-11 : 88%; 
-$w-12 : 100%;
-@mixin colonne{
-    margin: auto;
-    padding: 0 ($w-1/2);
-    width: $w-11;
-    display:block;
-}
 @mixin text-transparent {
-    color: white;  /* Fallback: assume this color ON TOP of image */
-   background: url(./image/selva1.jpeg) no-repeat;
+    color: white; 
+   background: url(./image/selva2.jpeg) no-repeat;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;}
-@mixin logo-position{
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: $w-11;
-    width: $w-3;
-    height: 100px;
-}
-body {
-    font-family: fedraserifB;
-    margin:0;
-    padding:0;
-}
-.haut{
-    background-image: $selva1;
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-}
-.ls { 
-    display:block;
-    padding: 0 10%;
-    background-color: $blue1;
-    font-size: 2em;
-    border-bottom: solid white 2px;
-}
-.menu { 
-    @include colonne;
-    height: 70px;
-    color: $green1;
-}
-.pa1 { 
-    @include colonne;
-    height: 700px;
-    background-color: $blue2;
-    color: $green1;
-}
-.pa2 {
-    background-color: white;
-    padding-top: 20px;
-}
-.pa2-1 { 
-    @include colonne;
-    color: $blue1;
-    text-align: center;
-}
-.pa2-ujf { 
-    @include logo-position;
-    background-image: $ujf;
-}
-.pa2-udem { 
-    @include logo-position;
-    background-image: $udem;
-}
-.pa2-unistra { 
-    @include logo-position;
-    background-image: $unistra;
-}
-.pa3 {
-    background-color: $blue3;
-    height: 100px;
-}
-.pa3-1 { 
-    @include colonne;
-    background-color: $blue2;
-    color: $green1;
-}
-.pa4 {
-    background-image: $selva2;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 700px;
-}
-.pa4-1 {
-    background: linear-gradient(to bottom, $blue3, $blue4);
-    padding:  0 10%;
-}
 h1, h2, h3, h4 {
     display:inline-block;
     @include text-transparent;
@@ -132,4 +39,87 @@ a {
     color: inherit;
     text-decoration: none;
     font-size: 1em;
+}
+body {
+    font-family: fedraserifB;
+    margin:0;
+    padding:0;
+}
+.clear {
+  clear: both;
+  height: 0; overflow: hidden;
+}
+
+.img-fond{
+    background-image: $selva2;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
+.fond-blanc{
+    background-color: white;
+}.fond-bleu2{
+    background-color: $blue2;
+}
+.top { 
+    display:block;
+    padding: 0 10%;
+    background-color: $blue1;
+    border-bottom: solid white 4px;
+}
+.title { 
+    font-size: 2em;
+}
+.menu { 
+    height: 30px;
+    color: $green1;
+    font-size: 0,7em;
+}
+.menu-button {
+    display:inline-block;
+    margin: 0 5px;
+    @include text-transparent;
+}
+.ligne80 {
+    width:80%;
+    margin:auto;
+}
+.ligne100 {
+    width:100%;
+}
+.colonne100 {
+    width: 100%;
+    padding: 5px 5%;
+    //border: solid red 2px ;
+}
+.colonne50 {
+    width: 50%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
+}
+.colonne33 {
+    width: 33.33%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
+}
+@mixin logo-position{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100px;
+}
+.ujf { 
+    background-image: $ujf;
+    @include logo-position;
+}
+.udem { 
+    background-image: $udem;
+    @include logo-position;
+}
+.unistra { 
+    background-image: $unistra;
+    @include logo-position;
 }
