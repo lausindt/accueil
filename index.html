@@ -3,15 +3,16 @@
 <head>
 	<title>Lauriane Sindt</title>
 
-	<link href="formationstyle.css" rel="stylesheet" media="all" type="text/css"> 
+	<link href="../formationstyle.css" rel="stylesheet" media="all" type="text/css"> 
 
 </head>
 
 <body >
+       <button id="bouton">Cliquez-moi !</button>
     <div class="img-fond">
         <div style="height:10px;"></div>
-        <div class="top">
-            <div class = title>
+        <div class="top fond-bleu1">
+            <div class = "title">
                 <h1>L</h1><h3>AURIANE</h3>
                 <h1>S</h1><h3>INDT</h3></div>
             <div class="menu">
@@ -53,6 +54,119 @@
         </div>
         <div class="clear"></div>
     </div>
+    <div class="ligne80">
+    <form>
+        <h1>Formulaire d'inscription</h1>
+        <p>
+            <label for="pseudo">Pseudo</label> :
+            <input type="text" name="pseudo" id="pseudo" required>
+            <span id="aidePseudo"></span>
+        </p>
+        <p>
+            <label for="mdp">Mot de passe</label> :
+            <input type="password" name="mdp" id="mdp" required>
+            <span id="aideMdp"></span>
+        </p>
+        <p>
+            <label for="courriel">Courriel</label> :
+            <input type="email" name="courriel" id="courriel" required placeholder="utilisateur@domaine.fr">
+            <span id="aideCourriel"></span>
+        </p>
+        <p>
+            <input type="checkbox" name="confirmation" id="confirmation">
+            <label for="confirmation">M'envoyer un courriel de confirmation</label>
+        </p>
+        <p>
+            <input type="radio" name="abonnement" id="abonewspromo" value="abonewspromo">
+            <label for="abonewspromo">M'abonner à la newsletter et aux promotions</label>
+            <br>
+            <input type="radio" name="abonnement" id="abonews" value="abonews">
+            <label for="abonews">M'abonner uniquement à la newsletter</label>
+            <br>
+            <input type="radio" name="abonnement" id="aborien" value="aborien" checked>
+            <label for="aborien">Ne pas m'abonner</label>
+            <br>
+        </p>
+        <p>
+            <label for="nationalite">Nationalité :</label>
+            <select name="nationalite" id="nationalite">
+                <option value="FR" selected>Française</option>
+                <option value="BE">Belge</option>
+                <option value="SUI">Suisse</option>
+                <option value="XX">Autre</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </form>
+
+    </div>
+    <div class="ligne80">
+    
+        <form method:"post" action="traitement.php">
+        <fieldset>
+            <legend>Coordonnées</legend>
+            
+            <p> <label for="pseudo">Pseudo:</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="ex: lili38" size="30" maxlength="10" autofocus required/> </p>
+            
+            <p> <label for="pass">Mot de passe:</label>
+                <input type="password" name="pass" id="pass" placeholder="ex: JE6INB" size="30" maxlength="10"/> </p>
+            
+            <p> <label for="email">Adresse mail:</label>
+                <input type="email" name="email" id="email" placeholder="ex: lili38@gmail.com" size="30" maxlength="30"/> </p>
+            <p> <label for="url">Adresse site internet:</label>
+                <input type="url" name="url" id="url" placeholder="ex: http://lili38.com" size="60" /> </p>
+            <p> <label for="tel">Téléphone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="ex: 0678356722" size="30" maxlength="20" /> </p>
+        </fieldset>
+        
+        <p> <label for="range">Notation:</label>
+        <input type="range" name="range" id="range" size="100" /> </p>
+        <p> <label for="color">Couleur:</label>
+        <input type="color" name="color" id="color" /> </p>
+        <p>
+        <p> <label for="search">Recherche:</label>
+        <input type="search" name="search" id="search" /> </p>
+        <p>
+       Cochez les aliments que vous aimez manger :<br />
+       <input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites</label><br />
+       <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
+       <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
+       <input type="checkbox" name="huitres" id="huitres" checked /> <label for="huitres">Huitres</label>
+   </p>
+        <p>
+            <label for="message">Votre message :
+            </label>
+            <br />
+            <textarea name="message" id="message" rows="10" cols="100" placeholder="Bonjour, "></textarea>
+        </p>
+        <p>
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+           <optgroup label="Europe">
+               <option value="france">France</option>
+               <option value="espagne">Espagne</option>
+               <option value="italie">Italie</option>
+               <option value="royaume-uni">Royaume-Uni</option>
+           </optgroup>
+           <optgroup label="Amérique">
+               <option value="canada">Canada</option>
+               <option value="etats-unis">Etats-Unis</option>
+           </optgroup>
+           <optgroup label="Asie">
+               <option value="chine">Chine</option>
+               <option value="japon">Japon</option>
+           </optgroup>
+       </select>
+        </p>
+        <input type="submit" value="Envoyer" />
+        </form>
+    </div>
+ 
+    
+    <script src="accueil.js"></script>
     
 </body>
 
