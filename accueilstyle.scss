@@ -12,124 +12,155 @@ font-style: normal;
 }
 
 $blue1 : rgb(2,0,30) ;
-$blue2 : rgba(2,0,30, 0.2) ;
+$blue2 : rgba(2,0,30, 0.85) ;
 $blue3 : rgb(206,223,234) ;
 $blue4 : rgba(159,202,224, 0) ;
 $green1 : rgb(220,200,70) ;
 $transparent : rgba(0,0,0, 0) ;
+
 $selva1 : url(./image/selva1.jpeg);
 $selva2 : url(./image/selva2.jpeg);
+
 $ujf : url(./image/ujf.png);
 $udem : url(./image/udem.png);
 $unistra : url(./image/unistra.png);
-$w-1 : 8%;
-$w-2 : 16%; 
-$w-3 : 24%;
-$w-4 : 32%; 
-$w-5 : 40%; 
-$w-6 : 48%; 
-$w-7 : 56%;
-$w-8 : 64%;
-$w-9 : 72%; 
-$w-10 : 80%;
-$w-11 : 88%; 
-$w-12 : 100%;
-@mixin colonne{
-    margin: auto;
-    padding: 0 ($w-1/2);
-    width: $w-11;
-    display:block;
-}
 @mixin text-transparent {
-    color: white;  /* Fallback: assume this color ON TOP of image */
-   background: url(./image/selva1.jpeg) no-repeat;
+    color: white; 
+    background: url(./image/selva1.jpeg) no-repeat fixed top center;
+    background-width: 100%;
    -webkit-background-clip: text;
+        //border-box _ L'arrière-plan s'étend jusqu'à la limite externe de la bordure. L'arrière-plan sera situé sous la bordure en termes d'ordre z.
+        //padding-box _ Aucun arrière-plan n'est dessiné dans la boîte de bordure. L'arrière-plan s'étend jusqu'à la limite de la boîte de remplissage (padding).
+        //content-box _ L'arrière-plan est limité à la boîte de contenu.
+        //text _ L'arrière-plan est limité au texte en premier plan. Cette valeur est uniquement utilisable avec la propriété préfixée en -webkit-.
    -webkit-text-fill-color: transparent;}
-@mixin logo-position{
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: $w-11;
-    width: $w-3;
-    height: 100px;
+h1, h2, h3, h4 {
+    display:inline-block;
+    line-height: 90px;
+    @include text-transparent;
+    padding:0;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: underline;
+    font-size: 1em;
 }
 body {
     font-family: fedraserifB;
     margin:0;
     padding:0;
 }
-.haut{
+.clear {
+  clear: both;
+  height: 0; overflow: hidden;
+}
+
+.img-fond{
     background-image: $selva1;
-    background-size: cover;
-    background-position: center ;
+    background-width: 100%;
+    background-origin: border-box;
+    background-position: top center ;
     background-repeat: no-repeat;
 }
-.ls { 
+
+.fond-blanc{
+    background-color: white;
+}
+.fond-bleu2{
+    background-color: $blue2;
+}
+.top { 
     display:block;
     padding: 0 10%;
-    background-color: $blue1;
+    border-bottom: solid $transparent 10px;
+}
+.ls{
+    color:$blue1;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 1,2em;
+    margin: 0px 0 0 0;
+    padding: 0 10%;
+}
+.title { 
     font-size: 2em;
-    border-bottom: solid white 2px;
 }
 .menu { 
-    @include colonne;
-    height: 70px;
-    color: $green1;
+    height: 30px;
+    font-size: 0,7em;
 }
-.pa1 { 
-    @include colonne;
-    height: 700px;
-    background-color: $blue2;
-    color: $green1;
+.menu-button {
+    display:inline-block;
+    margin: 0 5px;
+    @include text-transparent;
 }
-.pa2 {
-    background-color: white;
-    padding-top: 20px;
+.ligne80 {
+    width:80%;
+    margin:auto;
 }
-.pa2-1 { 
-    @include colonne;
-    color: $blue1;
-    text-align: center;
+.ligne100 {
+    width:100%;
 }
-.pa2-ujf { 
-    @include logo-position;
-    background-image: $ujf;
+.colonne100 {
+    width: 100%;
+    padding: 5px 5%;
+    //border: solid red 2px ;
 }
-.pa2-udem { 
-    @include logo-position;
-    background-image: $udem;
+.colonne90 {
+    width: 90%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
+    text-align:justify;
 }
-.pa2-unistra { 
-    @include logo-position;
-    background-image: $unistra;
+.colonne85 {
+    width: 85%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
+    text-align:justify;
 }
-.pa3 {
-    background-color: $blue3;
-    height: 100px;
+.colonne50 {
+    width: 50%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
+    text-align:justify;
 }
-.pa3-1 { 
-    @include colonne;
-    background-color: $blue2;
-    color: $green1;
+.colonne33 {
+    width: 33.33%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
 }
-.pa4 {
-    background-image: $selva2;
+.colonne20 {
+    width: 20%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
+}
+.colonne15 {
+    width: 15%;
+    padding: 5px 5%;
+    //border: solid violet 2px ;
+    float:left;
+}
+@mixin logo-position{
     background-repeat: no-repeat;
     background-size: contain;
-    height: 700px;
+    background-position: center;
+    height: 100px;
 }
-.pa4-1 {
-    background: linear-gradient(to bottom, $blue3, $blue4);
-    padding:  0 10%;
+.ujf { 
+    background-image: $ujf;
+    @include logo-position;
 }
-h1, h2, h3, h4 {
-    display:inline-block;
-    @include text-transparent;
-    padding:0;
-    margin:10px 0 0 0;
+.udem { 
+    background-image: $udem;
+    @include logo-position;
 }
-a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 1em;
+.unistra { 
+    background-image: $unistra;
+    @include logo-position;
 }
