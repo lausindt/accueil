@@ -1,0 +1,245 @@
+/* line 1, /Users/Spoke/GitHub/formationstyle.scss */
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'quadranta';
+  src: url("quadranta.eot");
+  src: url("quadranta.otf") format("truetype"), url("quadranta.woff") format("woff"), url("quadranta.eot?#iefix") format("embedded-opentype"), url("quadranta.svg#QuadrantaBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 28, /Users/Spoke/GitHub/formationstyle.scss */
+h1, h2, h3, h4 {
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+
+/* line 34, /Users/Spoke/GitHub/formationstyle.scss */
+h1 {
+    font-size: 2em;
+    line-height: 90px;}
+
+h2 {
+    font-size: 1em; }
+
+/* line 37, /Users/Spoke/GitHub/formationstyle.scss */
+a {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 1em; }
+
+/* line 42, /Users/Spoke/GitHub/formationstyle.scss */
+body {
+  font-family: fedraserifB;
+  margin: 0;
+  padding: 0; }
+
+/* line 47, /Users/Spoke/GitHub/formationstyle.scss */
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+/* line 57, /Users/Spoke/GitHub/formationstyle.scss */
+.top {
+    width: 100%;
+    display: block;
+    padding: 0 10%;
+    background-color: white;}
+
+/* line 61, /Users/Spoke/GitHub/formationstyle.scss */
+.ls {
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 1,2em;
+  margin: 0px 0 0 0;
+  padding: 0 10%; }
+
+/* line 71, /Users/Spoke/GitHub/formationstyle.scss */
+.menu {
+    background-color: white;
+  height: 30px;
+  font-size: 0,7em; }
+
+/* line 75, /Users/Spoke/GitHub/formationstyle.scss */
+.menu-button {
+  display: inline-block;
+  margin: 0 5px; }
+
+/* line 79, /Users/Spoke/GitHub/formationstyle.scss */
+.menu-button > a {
+  text-decoration: none; }
+
+/* line 80, /Users/Spoke/GitHub/formationstyle.scss */
+.ligne80 {
+  width: 80%;
+  margin: auto; }
+
+/* line 84, /Users/Spoke/GitHub/formationstyle.scss */
+.ligne90 {
+  width: 90%;
+  margin: auto; }
+
+/* line 88, /Users/Spoke/GitHub/formationstyle.scss */
+.ligne100 {
+  width: 100%; }
+
+/* line 91, /Users/Spoke/GitHub/formationstyle.scss */
+.colonne100 {
+  width: 100%;
+  padding: 5px 5%; }
+
+/* line 96, /Users/Spoke/GitHub/formationstyle.scss */
+.colonne90 {
+  width: 90%;
+  padding: 5px 5%;
+  float: left;
+  text-align: justify; }
+
+/* line 103, /Users/Spoke/GitHub/formationstyle.scss */
+.colonne85 {
+  width: 85%;
+  padding: 5px 5%;
+  float: left;
+  text-align: justify; }
+
+/* line 110, /Users/Spoke/GitHub/formationstyle.scss */
+.colonne50 {
+    display: inline-block;
+  width: 50%;
+  padding: 5px 5%;
+  float: left;
+  text-align: justify; }
+
+.colonne50l {
+    display: inline-block;
+    width: 50%;
+    padding: 5px 2% 5px 1%;
+    float: left;
+    text-align: justify; }
+
+.colonne50r {
+    display: inline-block;
+    width: 50%;
+    padding: 5px 1% 5px 2%;
+    float: left;
+    text-align: justify; }
+
+.colonne50l .date{
+    text-align: right; }
+
+.colonne50r .date{
+    text-align: left; }
+
+/* line 117, /Users/Spoke/GitHub/formationstyle.scss */
+.colonne33 {
+    width: 33.33%;
+    padding: 5px 5%;
+    float: left; }
+
+.center {
+    display: block;
+    margin: auto;}
+
+/* line 123, /Users/Spoke/GitHub/formationstyle.scss */
+.colonne20 {
+  width: 20%;
+  padding: 5px 5%;
+  float: left; }
+
+/* line 129, /Users/Spoke/GitHub/formationstyle.scss */
+.colonne15 {
+  width: 15%;
+  padding: 5px 5%;
+  float: left; }
+
+.timeline {
+    top: 100px;
+    position: relative;
+    width: 100%;
+    padding: 5px 2%;
+    float: left;
+    text-align: justify;
+    display:block;}
+
+/*bare centrale*/
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  
+  z-index: 5;}
+
+
+.desc {
+    font-style: italic;
+    font-size: 0.75em;
+    padding: 10px;}
+
+.article {
+    color: darkblue;
+    padding: 10px;}
+.detail {
+    display: block;
+    clear: both;
+    margin: 0 5%;
+}
+
+/* line 141, /Users/Spoke/GitHub/formationstyle.scss */
+.ujf {
+  background-image: url(./image/ujf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 80px;  
+    margin: 10px auto;}
+
+/* line 145, /Users/Spoke/GitHub/formationstyle.scss */
+.udem {
+  background-image: url(./image/udem.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 80px;
+    margin: 10px auto;}
+
+/* line 149, /Users/Spoke/GitHub/formationstyle.scss */
+.unistra {
+  background-image: url(./image/unistra.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 80px;
+    margin: 10px auto;}
+
+.art2015-1 {
+  background-image: url(./image/art2015-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px; }
+
+.art2015-2 {
+  background-image: url(./image/art2015-2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px; }
+
+.art2016 {
+  background-image: url(./image/art2016.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 150px; }
