@@ -1,4 +1,4 @@
-function clic() {
+/*function clic() {
     console.log("Clic !");
 }
 
@@ -19,3 +19,20 @@ window.addEventListener("beforeunload", function (e) {
 });
 // Focus sur la zone de saisie du pseudo
 pseudoElt.focus();
+*/
+
+//<script type="text/javascript">
+    
+$(document).ready(function()    {$('.text_container').addClass("hidden");
+    $('.text_container').click(function() {
+            var $this = $(this);
+
+            if ($this.hasClass("hidden")) {
+                $(this).removeClass("hidden").addClass("visible");
+
+            } else {
+                $(this).removeClass("visible").addClass("hidden");
+            }
+        });
+    });
+//</script>

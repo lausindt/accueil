@@ -22,6 +22,17 @@ h1 {
 
 h2 {
     font-size: 1em; }
+h3 {line-height: 60px;}
+
+.titre { 
+    margin: auto;
+    background: -moz-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: -webkit-gradient(linear, left, left, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+    background: -webkit-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: -o-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: -ms-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+    background: linear-gradient(to right, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);    
+}
 
 /* line 37, /Users/Spoke/GitHub/formationstyle.scss */
 a {
@@ -83,7 +94,10 @@ body {
 
 /* line 88, /Users/Spoke/GitHub/formationstyle.scss */
 .ligne100 {
-  width: 100%; }
+  width: 100%; 
+}
+.timeline .ligne100 {
+position: relative;}
 
 /* line 91, /Users/Spoke/GitHub/formationstyle.scss */
 .colonne100 {
@@ -107,28 +121,35 @@ body {
 /* line 110, /Users/Spoke/GitHub/formationstyle.scss */
 .colonne50 {
     display: inline-block;
-  width: 50%;
-  padding: 5px 5%;
-  float: left;
-  text-align: justify; }
+    width: 50%;
+    padding: 5px 5%;
+    float: left;
+    text-align: justify; }
 
 .colonne50l {
-    display: inline-block;
     width: 50%;
-    padding: 5px 2% 5px 1%;
+    padding: 5px 2% 5px 2%;
     float: left;
     text-align: justify; }
 
 .colonne50r {
-    display: inline-block;
     width: 50%;
-    padding: 5px 1% 5px 2%;
+    padding: 5px 2% 5px 2%;
     float: left;
     text-align: justify; }
 
 .colonne50l .date{
-    text-align: right; }
-
+    text-align: right;}
+.date::before{
+    position:absolute;
+    margin-left: -4px;
+    left: 50%;
+    content: '';
+    width:11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+}
 .colonne50r .date{
     text-align: left; }
 
@@ -155,10 +176,9 @@ body {
   float: left; }
 
 .timeline {
-    top: 100px;
     position: relative;
     width: 100%;
-    padding: 5px 2%;
+    padding: 25px 0;
     float: left;
     text-align: justify;
     display:block;}
@@ -179,7 +199,19 @@ body {
   background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   
-  z-index: 5;}
+  }
+
+.detail {
+    position: relative;
+    width: 100%;
+    padding: 25px 10px;
+    float: left;
+    text-align: justify;
+    display:block;}
+.detail a {
+    font-size: 0.6em;
+    color: blue;
+}
 
 
 .desc {
@@ -190,11 +222,7 @@ body {
 .article {
     color: darkblue;
     padding: 10px;}
-.detail {
-    display: block;
-    clear: both;
-    margin: 0 5%;
-}
+
 
 /* line 141, /Users/Spoke/GitHub/formationstyle.scss */
 .ujf {
@@ -214,6 +242,14 @@ body {
   height: 80px;
     margin: 10px auto;}
 
+.udem1 {
+  background-image: url(./image/udem1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 80px;
+    margin: 10px auto;}
+
 /* line 149, /Users/Spoke/GitHub/formationstyle.scss */
 .unistra {
   background-image: url(./image/unistra.png);
@@ -222,24 +258,72 @@ body {
   background-position: center;
   height: 80px;
     margin: 10px auto;}
+.ilc {
+  background-image: url(./image/ilc.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 80px;
+    margin: 10px auto;}
 
+.jnatprod {
+  background-image: url(./image/jnatprod.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px; }
+.aca {
+  background-image: url(./image/aca.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px; }
+.tetra {
+  background-image: url(./image/tetra.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px; }
+.isvv {
+  background-image: url(./image/ISVV.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px; }
 .art2015-1 {
   background-image: url(./image/art2015-1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px; }
+  height: 300px; }
 
 .art2015-2 {
   background-image: url(./image/art2015-2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px; }
+  height: 250px; }
 
 .art2016 {
   background-image: url(./image/art2016.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 150px; }
+  height: 250px; }
+
+.gris1 {
+    display: block;
+    background-color: palegoldenrod;
+}
+.gris2 {
+    display: block;
+    background-color: gainsboro;
+}
+
+.hidden>div {
+    display:none;
+}
+
+.visible>div {
+    display:block;
+}
