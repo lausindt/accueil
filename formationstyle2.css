@@ -1,4 +1,3 @@
-/* line 1, /Users/Spoke/GitHub/formationstyle.scss */
 * {
   box-sizing: border-box; }
 
@@ -9,180 +8,68 @@
   font-weight: normal;
   font-style: normal; }
 
-/* line 28, /Users/Spoke/GitHub/formationstyle.scss */
-h1, h2, h3, h4 {
-  display: inline-block;
-  padding: 0;
-  margin: 0; }
-
-/* line 34, /Users/Spoke/GitHub/formationstyle.scss */
-h1 {
-    font-size: 2em;
-    line-height: 90px;}
-
-h2 {
-    font-size: 1em; }
-h3 {line-height: 60px;}
-
-.titre { 
-    margin: auto;
-    background: -moz-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-    background: -webkit-gradient(linear, left, left, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
-    background: -webkit-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-    background: -o-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-    background: -ms-linear-gradient(left, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-    background: linear-gradient(to right, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);    
-}
-
-/* line 37, /Users/Spoke/GitHub/formationstyle.scss */
-a {
-  color: inherit;
-  text-decoration: underline;
-  font-size: 1em; }
-
-/* line 42, /Users/Spoke/GitHub/formationstyle.scss */
 body {
-  font-family: fedraserifB;
-  margin: 0;
-  padding: 0; }
-
-/* line 47, /Users/Spoke/GitHub/formationstyle.scss */
+  font-family: fedraserifB;}
 .clear {
   clear: both;
   height: 0;
   overflow: hidden; }
+h1 {
+    font-size: 2em;}
 
-/* line 57, /Users/Spoke/GitHub/formationstyle.scss */
+h2 {
+    font-size: 1em; }
+a {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 1em; }
+img {
+    max-width: 100%;
+  height: auto;
+}
+
+#intro {
+    background-color: forestgreen;
+    padding: 10px 0;}
+
 .top {
-    width: 100%;
-    display: block;
-    padding: 0 10%;
-    background-color: white;}
+  display: block;
+  padding: 0 10%; }
 
-/* line 61, /Users/Spoke/GitHub/formationstyle.scss */
 .ls {
   text-align: right;
   vertical-align: bottom;
-  font-size: 1,2em;
-  margin: 0px 0 0 0;
-  padding: 0 10%; }
+  font-size: 1,2em;}
 
-/* line 71, /Users/Spoke/GitHub/formationstyle.scss */
 .menu {
-    background-color: white;
-  height: 30px;
-  font-size: 0,7em; }
+    width: 100%;
+    font-size: 0,7em; 
+    padding: 1% 10%;
+    background-color: forestgreen;
+    z-index: 2;}
 
-/* line 75, /Users/Spoke/GitHub/formationstyle.scss */
 .menu-button {
   display: inline-block;
   margin: 0 5px; }
-
-/* line 79, /Users/Spoke/GitHub/formationstyle.scss */
 .menu-button > a {
   text-decoration: none; }
-
-/* line 80, /Users/Spoke/GitHub/formationstyle.scss */
-.ligne80 {
-  width: 80%;
-  margin: auto; }
-
-/* line 84, /Users/Spoke/GitHub/formationstyle.scss */
-.ligne90 {
-  width: 90%;
-  margin: auto; }
-
-/* line 88, /Users/Spoke/GitHub/formationstyle.scss */
-.ligne100 {
-  width: 100%; 
+.header {
+    position: fixed;
+    top: 0;
 }
-.timeline .ligne100 {
-position: relative;}
-
-/* line 91, /Users/Spoke/GitHub/formationstyle.scss */
-.colonne100 {
-  width: 100%;
-  padding: 5px 5%; }
-
-/* line 96, /Users/Spoke/GitHub/formationstyle.scss */
-.colonne90 {
-  width: 90%;
-  padding: 5px 5%;
-  float: left;
-  text-align: justify; }
-
-/* line 103, /Users/Spoke/GitHub/formationstyle.scss */
-.colonne85 {
-  width: 85%;
-  padding: 5px 5%;
-  float: left;
-  text-align: justify; }
-
-/* line 110, /Users/Spoke/GitHub/formationstyle.scss */
-.colonne50 {
-    display: inline-block;
-    width: 50%;
-    float: left;
-    text-align: justify; }
-
-.colonne50l {
-    width: 50%;
-    padding: 5px 2% 5px 2%;
-    float: left;
-    text-align: justify; }
-
-.colonne50r {
-    width: 50%;
-    padding: 5px 2% 5px 2%;
-    float: left;
-    text-align: justify; }
-
-.colonne50l .date{
-    text-align: right;}
-.date::before{
-    position:absolute;
-    margin-left: -4px;
-    left: 50%;
-    content: '';
-    width:11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: darkgoldenrod;
-}
-.colonne50r .date{
-    text-align: left; }
-
-/* line 117, /Users/Spoke/GitHub/formationstyle.scss */
-.colonne33 {
-    width: 33.33%;
-    padding: 5px 5%;
-    float: left; }
 
 .center {
     display: block;
     margin: auto;}
 
-/* line 123, /Users/Spoke/GitHub/formationstyle.scss */
-.colonne20 {
-  width: 20%;
-  padding: 5px 5%;
-  float: left; }
-
-/* line 129, /Users/Spoke/GitHub/formationstyle.scss */
-.colonne15 {
-  width: 15%;
-  padding: 5px 5%;
-  float: left; }
-
 .timeline {
     position: relative;
     width: 100%;
-    padding: 25px 0;
+    padding: 5px 2%;
     float: left;
     text-align: justify;
     display:block;}
 
-/*bare centrale*/
 .timeline:before {
   position: absolute;
   left: 50%;
@@ -197,24 +84,7 @@ position: relative;}
   background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
   background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-  
-  }
-
-.detail {
-    position: relative;
-    width: 100%;
-    padding: 25px 10px;
-    float: left;
-    text-align: justify;
-    display:block;}
-.detail a {
-    font-size: 0.6em;
-    color: blue;
-}
-.detail.img {
-    width: 50%;
-}
-
+    }
 
 .desc {
     font-style: italic;
@@ -224,225 +94,104 @@ position: relative;}
 .article {
     color: darkblue;
     padding: 10px;}
+.detail {
+    display: block;
+    clear: both;
+    margin: 0 5%;
+}
 
+.ligne100 {
+  width: 100%; }
 
-/* line 141, /Users/Spoke/GitHub/formationstyle.scss */
-.ujf {
-  background-image: url(./image/ujf.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 80px;  
-    margin: 10px auto;}
+.colonne100 {
+  width: 100%;
+  padding: 5px 5%; }
 
-/* line 145, /Users/Spoke/GitHub/formationstyle.scss */
-.udem {
-  background-image: url(./image/udem.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 80px;
-    margin: 10px auto;}
+.colonne50 {
+    display: inline-block;
+  width: 50%;
+  padding: 5px 5%;
+  float: left;
+  text-align: justify; }
 
-.udem1 {
-  background-image: url(./image/udem1.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 80px;
-    margin: 10px auto;}
+.colonne50l {
+    display: inline-block;
+    width: 50%;
+    padding: 5px 2% 5px 1%;
+    float: left;
+    text-align: justify; }
 
-/* line 149, /Users/Spoke/GitHub/formationstyle.scss */
-.unistra {
-  background-image: url(./image/unistra.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 80px;
-    margin: 10px auto;}
-.ilc {
-  background-image: url(./image/ilc.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 80px;
-    margin: 10px auto;}
+.colonne50r {
+    display: inline-block;
+    width: 50%;
+    padding: 5px 1% 5px 2%;
+    float: left;
+    text-align: justify; }
+
+.colonne50l .date{
+    text-align: right; }
+
+.colonne50r .date{
+    text-align: left; }
+
+.colonne33 {
+  width: 33.33%;
+  padding: 5px 5%;
+  float: left; }
 
 .jnatprod {
   background-image: url(./image/jnatprod.gif);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px; }
+  height: 80px;}
 .aca {
   background-image: url(./image/aca.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px; }
+  height: 80px;}
 .tetra {
   background-image: url(./image/tetra.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px; }
+  height: 80px; }
 .isvv {
-  background-image: url(./image/ISVV.png);
+    background-image: url(./image/ISVV.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height:100px;
+    }
+.ujf {
+  background-image: url(./image/ujf.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 100px; }
-.art2015-1 {
-  background-image: url(./image/art2015-1.jpg);
+  height: 80px;}
+.udem {
+  background-image: url(./image/udem.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 300px; }
-
-.art2015-2 {
-  background-image: url(./image/art2015-2.jpg);
+  height: 80px;}
+.udem1 {
+  background-image: url(./image/udem1.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 250px; }
-
-.art2016 {
-  background-image: url(./image/art2016.jpg);
+  height: 80px;}
+.unistra {
+  background-image: url(./image/unistra.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 250px; }
-img {
-	max-width:100%;
-	height:auto;
-}
-.br {
-    position:absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-.h97{
-    min-height: 97px;
-}
-.gris1 {
-    display: block;
-    background-color: palegoldenrod;
-}
-.gris2 {
-    display: block;
-    background-color: gainsboro;
-}
+  height: 80px;}
+.ilc {
+  background-image: url(./image/ilc.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 80px;}
 
-.hidden>div {
-    display:none;
-}
-
-.visible>div {
-    display:block;
-}
-
-li {
-    font-style: italic;
-    font-size: 0.75em;
-    position: relative;}
-
-
-
-/* FORMULAIRE
-    <div class="detail">
-    <form>
-        <h2>Formulaire de contact</h2>
-        <p>
-            <label for="pseudo">Nom</label> :
-            <input type="text" name="pseudo" id="pseudo" required>
-            <span id="aidePseudo"></span>
-        </p>
-        <p>
-            <label for="courriel">Courriel</label> :
-            <input type="email" name="courriel" id="courriel" required placeholder="utilisateur@domaine.fr">
-            <span id="aideCourriel"></span>
-        </p>
-        <p>
-            <input type="checkbox" name="confirmation" id="confirmation">
-            <label for="confirmation">M'envoyer un courriel de confirmation</label>
-        </p>
-        <p>
-            <label for="nationalite">Nationalité :</label>
-            <select name="nationalite" id="nationalite">
-                <option value="FR" selected>Française</option>
-                <option value="BE">Belge</option>
-                <option value="SUI">Suisse</option>
-                <option value="XX">Autre</option>
-            </select>
-        </p>
-
-        <input type="submit" value="Envoyer">
-        <input type="reset" value="Annuler">
-    </form>
-
-    </div>
-    <div class="detail">
-    
-        <form method:"post" action="traitement.php">
-        <fieldset>
-            <legend>Coordonnées</legend>
-            
-            <p> <label for="pseudo">Pseudo:</label>
-                <input type="text" name="pseudo" id="pseudo" placeholder="ex: lili38" size="30" maxlength="10" /> </p>
-            
-            <p> <label for="pass">Mot de passe:</label>
-                <input type="password" name="pass" id="pass" placeholder="ex: JE6INB" size="30" maxlength="10"/> </p>
-            
-            <p> <label for="email">Adresse mail:</label>
-                <input type="email" name="email" id="email" placeholder="ex: lili38@gmail.com" size="30" maxlength="30"/> </p>
-            <p> <label for="url">Adresse site internet:</label>
-                <input type="url" name="url" id="url" placeholder="ex: http://lili38.com" size="60" /> </p>
-            <p> <label for="tel">Téléphone:</label>
-                <input type="tel" name="tel" id="tel" placeholder="ex: 0678356722" size="30" maxlength="20" /> </p>
-        </fieldset>
-        
-        <p> <label for="range">Notation:</label>
-        <input type="range" name="range" id="range" size="100" /> </p>
-        <p> <label for="color">Couleur:</label>
-        <input type="color" name="color" id="color" /> </p>
-        <p>
-        <p> <label for="search">Recherche:</label>
-        <input type="search" name="search" id="search" /> </p>
-        <p>
-       Cochez les aliments que vous aimez manger :<br />
-       <input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites</label><br />
-       <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br />
-       <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label><br />
-       <input type="checkbox" name="huitres" id="huitres" checked /> <label for="huitres">Huitres</label>
-   </p>
-        <p>
-            <label for="message">Votre message :
-            </label>
-            <br />
-            <textarea name="message" id="message" rows="10" cols="100" placeholder="Bonjour, "></textarea>
-        </p>
-        <p>
-       <label for="pays">Dans quel pays habitez-vous ?</label><br />
-       <select name="pays" id="pays">
-           <optgroup label="Europe">
-               <option value="france">France</option>
-               <option value="espagne">Espagne</option>
-               <option value="italie">Italie</option>
-               <option value="royaume-uni">Royaume-Uni</option>
-           </optgroup>
-           <optgroup label="Amérique">
-               <option value="canada">Canada</option>
-               <option value="etats-unis">Etats-Unis</option>
-           </optgroup>
-           <optgroup label="Asie">
-               <option value="chine">Chine</option>
-               <option value="japon">Japon</option>
-           </optgroup>
-       </select>
-        </p>
-        <input type="submit" value="Envoyer" />
-        </form>
-    </div>
-
-*/
