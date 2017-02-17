@@ -10,6 +10,7 @@
 
 body {
   font-family: fedraserifB;
+    font-size: 0.9em;
     margin: 0;
     padding: 0;}
 .clear {
@@ -32,7 +33,7 @@ img {
 
 #intro {
     background-color: forestgreen;
-    padding: 10px 0;}
+    padding: 10px 0 0 0;}
 
 .top {
   display: block;
@@ -51,23 +52,27 @@ img {
     z-index: 2;}
 
 .menu-button {
+    position: relative;
   display: inline-block;
   margin: 0 5px; }
-.menu-button > a {
-  text-decoration: none; }
+.deroule > a {
+  text-decoration: none;
+    position: absolute;
+    display: block;
+    background-color: forestgreen;}
+.deroule {
+    position: absolute;
+}
+
 .header {
     position: fixed;
     top: 0;
+    border-bottom: 1px solid white;
 }
-
-.center {
-    display: block;
-    margin: auto;}
-
 .timeline {
     position: relative;
     width: 100%;
-    padding: 5px 2%;
+    padding: 5px 2% 20px 2%;
     float: left;
     text-align: justify;
     display:block;}
@@ -97,9 +102,10 @@ img {
     color: darkblue;
     padding: 10px;}
 .detail {
-    display: block;
-    clear: both;
-    margin: 0 5%;
+    padding: 10px 2%;
+}
+.cache{
+    display:none;
 }
 
 .ligne100 {
