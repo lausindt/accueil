@@ -1,5 +1,7 @@
 $(function() {
     
+    $('#header').position
+    
     $(window).scroll(function() {
     var height = $(window).scrollTop();
 //  console.log(height);
@@ -23,3 +25,5 @@ $(function() {
         });
     
 });
+
+

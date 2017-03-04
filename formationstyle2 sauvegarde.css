@@ -46,12 +46,9 @@ max-height: 110px;}
   font-size: 1,2em;}
 
 
-.molecules {
-    display: none;
-}
+
 
 .menu-demo2, .menu-demo2 ul{
-    display: none;
 padding:0;
 margin:0;
 list-style:none;
@@ -244,9 +241,8 @@ color:#000;
   float: left; }
 
 footer {
-    height: 100px;
+    height: 30px;
     background-color: forestgreen;
-    padding: 10px 2%;
 }
 
 .jnatprod {
@@ -287,7 +283,7 @@ footer {
   background-position: center;
   height: 80px;}
 .udem1 {
-  background-image: url(./image/irbv.jpg);
+  background-image: url(./image/udem1.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -297,7 +293,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 70px;}
+  height: 50px;}
 .ilc {
   background-image: url(./image/ilc.jpg);
   background-repeat: no-repeat;
